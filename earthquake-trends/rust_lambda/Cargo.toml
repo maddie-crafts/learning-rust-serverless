@@ -1,0 +1,17 @@
+[package]
+name = "earthquake-trends"
+version = "0.1.0"
+author = "Maddie Albu"
+edition = "2024"
+
+[dependencies]
+polars = { version = "0.39", features = ["parquet", "lazy", "temporal", "csv"] }
+tokio = { version = "1", features = ["full"] }
+itertools = "0.12"
+chrono = { version = "0.4.38", features = ["serde"] }
+lambda_http = "0.13.0"
+serde = { version = "1.0.217", features = ["derive"] }
+rand = "0.8.5"
+serde_json = "1.0.134"
+anyhow = "1.0.95"
+reqwest = { version="0.12.11", features=["json"] }
