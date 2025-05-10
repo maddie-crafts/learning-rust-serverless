@@ -24,3 +24,7 @@ A serverless API built in Rust that allows users to query **recent earthquake da
 |-------------|----------|-----------------------------------------|
 | `from_ms`   | No       | Unix timestamp in milliseconds (default: 24h ago) |
 | `n_results` | No       | Max number of results to return (default: 100) |
+
+**Example:**
+```bash
+curl "https://<api-id>.execute-api.<region>.amazonaws.com/prod/?from_ms=1719700000000&n_results=10"
